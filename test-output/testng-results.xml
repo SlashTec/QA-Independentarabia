@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-11T11:36:58 EET" name="Default suite" finished-at="2025-05-11T11:37:34 EET" duration-ms="36158">
+    <groups>
+    </groups>
+    <test started-at="2025-05-11T11:36:58 EET" name="Default test" finished-at="2025-05-11T11:37:34 EET" duration-ms="36158">
+      <class name="independentarabia.independentarabia.TC001openApp">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:independentarabia.independentarabia.TC001openApp@77847718]" started-at="2025-05-11T11:36:58 EET" name="setUp" finished-at="2025-05-11T11:37:07 EET" duration-ms="9564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC001AppLaunch()[pri:1, instance:independentarabia.independentarabia.TC001openApp@77847718]" started-at="2025-05-11T11:37:07 EET" name="TC001AppLaunch" finished-at="2025-05-11T11:37:13 EET" duration-ms="5564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001AppLaunch -->
+        <test-method is-config="true" signature="takeScreenshotAfterEachTest1(org.testng.ITestResult)[pri:0, instance:independentarabia.independentarabia.TC001openApp@77847718]" started-at="2025-05-11T11:37:13 EET" name="takeScreenshotAfterEachTest1" finished-at="2025-05-11T11:37:13 EET" duration-ms="638" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC001AppLaunch status=SUCCESS method=TC001openApp.TC001AppLaunch()[pri:1, instance:independentarabia.independentarabia.TC001openApp@77847718] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotAfterEachTest1 -->
+        <test-method signature="TC002Login()[pri:2, instance:independentarabia.independentarabia.TC001openApp@77847718]" started-at="2025-05-11T11:37:13 EET" name="TC002Login" finished-at="2025-05-11T11:37:26 EET" duration-ms="12759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002Login -->
+        <test-method is-config="true" signature="takeScreenshotAfterEachTest1(org.testng.ITestResult)[pri:0, instance:independentarabia.independentarabia.TC001openApp@77847718]" started-at="2025-05-11T11:37:26 EET" name="takeScreenshotAfterEachTest1" finished-at="2025-05-11T11:37:27 EET" duration-ms="522" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC002Login status=SUCCESS method=TC001openApp.TC002Login()[pri:2, instance:independentarabia.independentarabia.TC001openApp@77847718] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotAfterEachTest1 -->
+        <test-method signature="TC003_OpenPolicyTab_And_ClickNext()[pri:3, instance:independentarabia.independentarabia.TC001openApp@77847718]" started-at="2025-05-11T11:37:27 EET" name="TC003_OpenPolicyTab_And_ClickNext" finished-at="2025-05-11T11:37:29 EET" duration-ms="2248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003_OpenPolicyTab_And_ClickNext -->
+        <test-method is-config="true" signature="takeScreenshotAfterEachTest1(org.testng.ITestResult)[pri:0, instance:independentarabia.independentarabia.TC001openApp@77847718]" started-at="2025-05-11T11:37:29 EET" name="takeScreenshotAfterEachTest1" finished-at="2025-05-11T11:37:29 EET" duration-ms="289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC003_OpenPolicyTab_And_ClickNext status=SUCCESS method=TC001openApp.TC003_OpenPolicyTab_And_ClickNext()[pri:3, instance:independentarabia.independentarabia.TC001openApp@77847718] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotAfterEachTest1 -->
+        <test-method signature="TC004clickNextButton()[pri:4, instance:independentarabia.independentarabia.TC001openApp@77847718]" started-at="2025-05-11T11:37:29 EET" name="TC004clickNextButton" finished-at="2025-05-11T11:37:29 EET" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004clickNextButton -->
+        <test-method is-config="true" signature="takeScreenshotAfterEachTest1(org.testng.ITestResult)[pri:0, instance:independentarabia.independentarabia.TC001openApp@77847718]" started-at="2025-05-11T11:37:29 EET" name="takeScreenshotAfterEachTest1" finished-at="2025-05-11T11:37:30 EET" duration-ms="461" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC004clickNextButton status=SUCCESS method=TC001openApp.TC004clickNextButton()[pri:4, instance:independentarabia.independentarabia.TC001openApp@77847718] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotAfterEachTest1 -->
+        <test-method signature="TC005denyPermissionPopup()[pri:5, instance:independentarabia.independentarabia.TC001openApp@77847718]" started-at="2025-05-11T11:37:30 EET" name="TC005denyPermissionPopup" finished-at="2025-05-11T11:37:33 EET" duration-ms="3178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC005denyPermissionPopup -->
+        <test-method is-config="true" signature="takeScreenshotAfterEachTest1(org.testng.ITestResult)[pri:0, instance:independentarabia.independentarabia.TC001openApp@77847718]" started-at="2025-05-11T11:37:33 EET" name="takeScreenshotAfterEachTest1" finished-at="2025-05-11T11:37:34 EET" duration-ms="750" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC005denyPermissionPopup status=SUCCESS method=TC001openApp.TC005denyPermissionPopup()[pri:5, instance:independentarabia.independentarabia.TC001openApp@77847718] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotAfterEachTest1 -->
+      </class> <!-- independentarabia.independentarabia.TC001openApp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
