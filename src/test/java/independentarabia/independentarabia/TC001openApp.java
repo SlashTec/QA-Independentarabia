@@ -69,9 +69,9 @@ public class TC001openApp {
 	                    AppiumBy.accessibilityId("اندبندنت عربية")
 	                )
 	            );
-	            Assert.assertTrue(homeTab.isDisplayed(), "✅ التطبيق اشتغل والعنصر الرئيسي ظاهر.");
+	            Assert.assertTrue(homeTab.isDisplayed(), "التطبيق اشتغل والعنصر الرئيسي ظاهر.");
 	        } catch (Exception e) {
-	            Assert.fail("❌ التطبيق لم يشتغل أو عنصر 'الرئيسية' غير موجود: " + e.getMessage());
+	            Assert.fail(" التطبيق لم يشتغل أو عنصر 'الرئيسية' غير موجود: " + e.getMessage());
 	        }
 	    }
 		   
@@ -82,15 +82,15 @@ public class TC001openApp {
 	       try {
 	           WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-	           // انتظار زر تسجيل الدخول الأول (قد يكون الزر الأول في الصفحة)
+	           // انتظار زر تسجيل الدخول الأول
 	           WebElement loginBtn = wait.until(
 	               ExpectedConditions.presenceOfElementLocated(
 	                   AppiumBy.accessibilityId("تسجيل الدخول")
 	               )
 	           );
-	           Assert.assertTrue(loginBtn.isDisplayed(), "❌ Login button is not displayed!");
+	           Assert.assertTrue(loginBtn.isDisplayed(), " Login button is not displayed!");
 	           loginBtn.click();
-	           System.out.println("✅ Clicked on the first login button.");
+	           System.out.println(" Clicked on the first login button.");
 
 	           // إدخال البريد الإلكتروني
 	           WebElement emailField = wait.until(
@@ -115,18 +115,18 @@ public class TC001openApp {
 	           System.out.println("✅ Password entered.");
 	           Thread.sleep(5000);
 
-	           // انتظار زر تسجيل الدخول الثاني (الذي يحتوي على فراغ في نهاية النص)
+	           // انتظار زر تسجيل الدخول الثاني 
 	           WebElement submitLoginBtn = wait.until(
 	               ExpectedConditions.presenceOfElementLocated(
 	            		   AppiumBy.xpath("//android.widget.Button[@content-desc='تسجيل الدخول ']")
 	               )
 	           );
-	           Assert.assertTrue(submitLoginBtn.isDisplayed(), "❌ Submit login button is not displayed.");
+	           Assert.assertTrue(submitLoginBtn.isDisplayed(), " Submit login button is not displayed.");
 	           submitLoginBtn.click();
-	           System.out.println("✅ Clicked on the submit login button successfully.");
+	           System.out.println(" Clicked on the submit login button successfully.");
 
 	       } catch (Exception e) {
-	           Assert.fail("❌ Failed during login process: " + e.getMessage());
+	           Assert.fail(" Failed during login process: " + e.getMessage());
 	       }
 	   }
 
@@ -141,17 +141,17 @@ public class TC001openApp {
 	               ExpectedConditions.elementToBeClickable(AppiumBy.accessibilityId("سياسة"))
 	           );
 	           policyTab.click();
-	           System.out.println("✅ تم الضغط على تبويب 'سياسة'");
+	           System.out.println(" تم الضغط على تبويب 'سياسة'");
 
 	           // الانتظار والنقر على زر "التالي"
 	           WebElement nextButton = wait.until(
 	               ExpectedConditions.elementToBeClickable(AppiumBy.accessibilityId("التالي"))
 	           );
 	           nextButton.click();
-	           System.out.println("✅ تم الضغط على زر 'التالي'");
+	           System.out.println("تم الضغط على زر 'التالي'");
 
 	       } catch (Exception e) {
-	           Assert.fail("❌ فشل في الضغط على 'سياسة' أو 'التالي': " + e.getMessage());
+	           Assert.fail(" فشل في الضغط على 'سياسة' أو 'التالي': " + e.getMessage());
 	       }
 	   }
 
@@ -167,10 +167,10 @@ public class TC001openApp {
 
 	           // الضغط على الزر
 	           nextButton.click();
-	           System.out.println("✅ تم الضغط على زر 'التالي' بنجاح.");
+	           System.out.println(" تم الضغط على زر 'التالي' بنجاح.");
 
 	       } catch (Exception e) {
-	           Assert.fail("❌ لم يتم العثور على زر 'التالي' أو لم يكن قابلاً للنقر: " + e.getMessage());
+	           Assert.fail(" لم يتم العثور على زر 'التالي' أو لم يكن قابلاً للنقر: " + e.getMessage());
 	       }
 	   }
 
@@ -186,9 +186,9 @@ public class TC001openApp {
 	                )
 	            );
 	            denyBtn.click();
-	            System.out.println("✅ Permission denied successfully.");
+	            System.out.println(" Permission denied successfully.");
 	        } catch (Exception e) {
-	            System.out.println("⚠️ Permission popup not shown or already handled.");
+	            System.out.println("Permission popup not shown or already handled.");
 	        }
 	    }
 	   
@@ -197,14 +197,14 @@ public class TC001openApp {
 	   
 	    @AfterMethod ()
 	    public void takeScreenshotAfterEachTest1(ITestResult result) {
-	    	System.out.println("🔍 @AfterMethod is triggered for test: " + result.getMethod().getMethodName());
+	    	System.out.println("@AfterMethod is triggered for test: " + result.getMethod().getMethodName());
 
 	    	try {
 	        	
 	            // اسم التست اللي خلص الآن
 	            String testName = result.getMethod().getMethodName();
 
-	            // توقيت مميز لكل صورة
+	            // توقيت لكل صورة
 	            String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 
 	            File scrFile = driver.getScreenshotAs(OutputType.FILE);
@@ -213,9 +213,9 @@ public class TC001openApp {
 	            targetFile.getParentFile().mkdirs(); // ينشئ المجلد إذا مش موجود
 	            Files.copy(scrFile.toPath(), targetFile.toPath());
 
-	            System.out.println("📸 Screenshot saved for test: " + testName);
+	            System.out.println(" Screenshot saved for test: " + testName);
 	        } catch (Exception e) {
-	            System.out.println("❌ Failed to take screenshot: " + e.getMessage());
+	            System.out.println("Failed to take screenshot: " + e.getMessage());
 	        }
 	    } 
 	   
@@ -226,7 +226,7 @@ public class TC001openApp {
 	            // اسم التست اللي خلص الآن
 	            String testName = result.getMethod().getMethodName();
 
-	            // توقيت مميز لكل صورة
+	            // توقيت  لكل صورة
 	            String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 
 	            File scrFile = driver.getScreenshotAs(OutputType.FILE);
