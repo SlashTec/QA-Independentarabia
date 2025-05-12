@@ -41,18 +41,8 @@
 			<artifactId>junit-jupiter-params</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>mobileTesting</groupId>
-			<artifactId>mobileTesting</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>DBTesting</groupId>
-			<artifactId>DBTesting</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-
-
+		
+		
 		<!-- Appium Java Client -->
 		<dependency>
 			<groupId>io.appium</groupId>
